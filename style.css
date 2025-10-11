@@ -1,0 +1,261 @@
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  color: #f5f5f5;
+  background: #0b1a2e;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Links */
+a {
+  color: #c7a008; /* gold accent */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #0b1a2e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo img {
+  margin: 0;
+  width: 20%;
+}
+
+header .logo p {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+nav a { 
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-left: .3rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    flex-shrink: 1;
+}
+
+nav a:hover {
+  color: #c7a008; /* gold */
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("GroupPhoto.jpg") center/cover no-repeat;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darken image slightly */
+  z-index: 1;
+}
+
+.hero .top-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+
+/* ---------- Sections ---------- */
+section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+section h2 {
+  color: #fff;
+  border-bottom: 2px solid #c7a008;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: .5rem;
+}
+
+/* ---------- Meet the Band Section ---------- */
+#band {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.band-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.member {
+  background: #091524;
+  border-radius: 12px;
+  padding: .5rem;
+  width: 175px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1px;
+  margin-bottom: 0.5rem;
+  border: 2px solid #f5c518; /* yellow border */
+}
+
+.member h3 {
+  margin: 0.3rem 0 0;
+  color: #f5c518;
+  font-size: 1.1rem;
+}
+
+.member p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d63a3a;
+}
+
+/* ---------- Contact Section ---------- */
+#contact {
+  text-align: center;
+  margin: 5rem 0;
+  color: white;
+}
+
+#contact h2 {
+    text-align: center;
+  color: #f5c518;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.social-media-box {
+  background: #091524;
+  border: 2px solid #f5c518;
+  border-radius: 12px;
+  width: 260px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-media-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+}
+
+.social-media-box h3 {
+  color: #f5c518;
+  margin-bottom: 1rem;
+}
+
+.social-media-box a {
+  color: #d63a3a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-media-box a:hover {
+  text-decoration: underline;
+}
+
+.social-media-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.social-media-box input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.social-media-box button {
+  background: #f5c518;
+  border: none;
+  color: #091524;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.social-media-box button:hover {
+  background: #d63a3a;
+  color: white;
+}
+
+
+/* ---------- Calendar ---------- */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.calendar-container iframe {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #0b1a2e;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
