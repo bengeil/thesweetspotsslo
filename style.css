@@ -133,23 +133,43 @@ nav a:hover {
 /* ---------- Sections ---------- */
 section {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 3rem auto;
+    padding: 2.5rem 1.5rem;
     text-align: center;
+    background: linear-gradient(135deg, #091524 0%, #0b1a2e 100%);
+    border: 3px solid #f5c518;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(245, 197, 24, 0.2), 0 0 40px rgba(245, 197, 24, 0.05);
 }
 
 section h2 {
-  color: #fff;
-  border-bottom: 2px solid #c7a008;
+  color: #f5c518;
+  border: none;
   display: inline-block;
-  padding-bottom: 0.3rem;
-  margin-bottom: .5rem;
+  padding: 0;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 20px rgba(245, 197, 24, 0.5);
+}
+
+section h3 {
+  color: #f5c518;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 15px rgba(245, 197, 24, 0.4);
+}
+
+section p {
+  color: #f5f5f5;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
 }
 
 /* ---------- Meet the Band Section ---------- */
 #band {
   text-align: center;
-  margin-top: 4rem;
 }
 
 .band-members {
@@ -161,17 +181,18 @@ section h2 {
 }
 
 .member {
-  background: #091524;
+  background: #0b1a2e;
   border-radius: 12px;
   padding: .5rem;
   width: 175px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border: 2px solid #f5c518;
+  box-shadow: 0 6px 20px rgba(245, 197, 24, 0.3), 0 0 30px rgba(245, 197, 24, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  box-shadow: 0 8px 28px rgba(245, 197, 24, 0.5), 0 0 50px rgba(245, 197, 24, 0.2);
 }
 
 .member img {
@@ -198,15 +219,7 @@ section h2 {
 /* ---------- Contact Section ---------- */
 #contact {
   text-align: center;
-  margin: 5rem 0;
   color: white;
-}
-
-#contact h2 {
-    text-align: center;
-    color: #f5c518;
-    font-size: 2rem;
-    margin-bottom: 2rem;
 }
 
 .social-media {
@@ -217,18 +230,18 @@ section h2 {
 }
 
 .social-media-box {
-  background: #091524;
+  background: #0b1a2e;
   border: 2px solid #f5c518;
   border-radius: 12px;
   width: 260px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 6px 20px rgba(245, 197, 24, 0.3), 0 0 30px rgba(245, 197, 24, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-media-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+  box-shadow: 0 8px 28px rgba(245, 197, 24, 0.5), 0 0 50px rgba(245, 197, 24, 0.2);
 }
 
 .social-media-box h3 {
@@ -313,7 +326,7 @@ section h2 {
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1.5rem;
-    background: #091524;
+    background: #0b1a2e;
     border: 2px solid #f5c518;
     border-radius: 8px;
     color: #f5c518;
@@ -321,14 +334,14 @@ section h2 {
     font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.2), 0 0 20px rgba(245, 197, 24, 0.1);
 }
 
 .artist-link:hover {
     background: #f5c518;
     color: #0b1a2e;
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.4);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5), 0 0 40px rgba(245, 197, 24, 0.3);
     text-decoration: none;
 }
 
@@ -352,10 +365,10 @@ section h2 {
     gap: 2rem;
     margin-top: 2rem;
     padding: 2rem;
-    background: #091524;
-    border-radius: 12px;
-    border: 2px solid #f5c518;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    background: #0b1a2e;
+    border-radius: 16px;
+    border: 3px solid #f5c518;
+    box-shadow: 0 8px 24px rgba(245, 197, 24, 0.3), 0 0 40px rgba(245, 197, 24, 0.1);
 }
 
 .ep-cover {
@@ -367,8 +380,8 @@ section h2 {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-    border: 2px solid #f5c518;
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4), 0 0 40px rgba(245, 197, 24, 0.2);
+    border: 3px solid #f5c518;
 }
 
 .ep-info {
@@ -377,6 +390,7 @@ section h2 {
 }
 
 .ep-title {
+    text-align: center;
     color: #f5c518;
     font-size: 2.3rem;
     margin-bottom: 1rem;
@@ -402,7 +416,7 @@ section h2 {
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background: #0b1a2e;
+    background: #091524;
     border: 2px solid #f5c518;
     border-radius: 8px;
     color: #f5c518;
@@ -410,14 +424,14 @@ section h2 {
     font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.2), 0 0 20px rgba(245, 197, 24, 0.1);
 }
 
 .streaming-link:hover {
     background: #f5c518;
     color: #0b1a2e;
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.4);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.5), 0 0 40px rgba(245, 197, 24, 0.3);
     text-decoration: none;
 }
 
@@ -450,7 +464,7 @@ section h2 {
 
 /* ---------- Live Performance Section ---------- */
 .live-performance {
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .performance-description {
@@ -477,9 +491,9 @@ section h2 {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-    border: 2px solid #f5c518;
-    background: #091524;
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4), 0 0 40px rgba(245, 197, 24, 0.2);
+    border: 3px solid #f5c518;
+    background: #0b1a2e;
 }
 
 .video-wrapper iframe {
@@ -501,7 +515,7 @@ section h2 {
 
 /* ---------- Previous Shows Section ---------- */
 .previous-shows {
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
 .shows-description {
@@ -528,9 +542,9 @@ section h2 {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-    border: 2px solid #f5c518;
-    background: #091524;
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.4), 0 0 40px rgba(245, 197, 24, 0.2);
+    border: 3px solid #f5c518;
+    background: #0b1a2e;
 }
 
 .playlist-wrapper iframe {
@@ -552,7 +566,114 @@ section h2 {
 
 .calendar-container iframe {
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.3), 0 0 40px rgba(245, 197, 24, 0.1);
+    border: 3px solid #f5c518;
+}
+
+/* ---------- Show Announcement ---------- */
+.show-announcement {
+  background: linear-gradient(135deg, #091524 0%, #0b1a2e 100%);
+  border: 3px solid #f5c518;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  margin: 3rem auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 24px rgba(245, 197, 24, 0.3), 0 0 40px rgba(245, 197, 24, 0.1);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 8px 24px rgba(245, 197, 24, 0.3), 0 0 40px rgba(245, 197, 24, 0.1);
+  }
+  50% {
+    box-shadow: 0 8px 32px rgba(245, 197, 24, 0.5), 0 0 60px rgba(245, 197, 24, 0.2);
+  }
+}
+
+.show-announcement h2 {
+  color: #f5c518;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 0 20px rgba(245, 197, 24, 0.5);
+  border: none;
+  padding: 0;
+}
+
+.announcement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flyer-container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid #f5c518;
+}
+
+.show-flyer {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.show-flyer:hover {
+  transform: scale(1.02);
+}
+
+.show-details {
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.show-title {
+  color: #f5c518;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.show-date,
+.show-time,
+.show-venue {
+  font-size: 1.3rem;
+  margin: 0.8rem 0;
+  color: #f5f5f5;
+}
+
+.show-venue {
+  color: #d63a3a;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .announcement-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .show-details {
+    text-align: left;
+    flex: 1;
+    max-width: 400px;
+  }
+}
+
+/* ---------- Mailing List Section ---------- */
+section iframe {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(245, 197, 24, 0.3), 0 0 40px rgba(245, 197, 24, 0.1);
+  border: 3px solid #f5c518;
+  max-width: 100%;
 }
 
 /* ---------- Footer ---------- */
@@ -563,4 +684,5 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
+  border-top: 2px solid #f5c518;
 }
