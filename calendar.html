@@ -7,32 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="BandLogo.png" class="logo">
-            <p>  R&B / Soul / Funk</p>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="BandLogo.png" alt="The Sweet Spots">
+                <p>R&B / Soul / Funk</p>
+            </div>
+
+            <div class="top-bar-center">
+                <img src="BandLogo.png" class="top-bar-logo" alt="The Sweet Spots">
+            </div>
+
+            <details class="nav-dropdown">
+                <summary class="nav-dropdown-toggle">
+                    <span>Menu</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </summary>
+                <nav class="nav-dropdown-menu">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#bio">Bio</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="music.html">Music</a>
+                    <a href="calendar.html">Calendar</a>
+                </nav>
+            </details>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">Bio</a>
-            <a href="index.html">Contact</a>
-            <a href="music.html">Music</a>
-            <a href="calendar.html">Calendar</a>
-        </nav>
     </header>
 
     <!-- Show Announcement -->
     <section id="show-announcement" class="show-announcement">
-        <h2>Upcoming Show Alert!!!</h2>
         <div class="announcement-content">
             <div class="flyer-container">
-                <img src="SweetSprings.jpg" alt="Sweet Springs Saloon" class="show-flyer">
+                <img src="SummerShows.png" alt="Sweet Springs Saloon" class="show-flyer">
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Upcoming Gigs</h2>
         <p>Stay up to date with all of our upcoming shows!</p>
 
         <div class="calender-container">

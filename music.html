@@ -8,18 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="BandLogo.png" class="logo">
-            <p>  R&B / Soul / Funk</p>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="BandLogo.png" alt="The Sweet Spots">
+                <p>R&B / Soul / Funk</p>
+            </div>
+
+            <div class="top-bar-center">
+                <img src="BandLogo.png" class="top-bar-logo" alt="The Sweet Spots">
+            </div>
+
+            <details class="nav-dropdown">
+                <summary class="nav-dropdown-toggle">
+                    <span>Menu</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </summary>
+                <nav class="nav-dropdown-menu">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#bio">Bio</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="music.html">Music</a>
+                    <a href="calendar.html">Calendar</a>
+                </nav>
+            </details>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html">Bio</a>
-            <a href="index.html">Contact</a>
-            <a href="music.html">Music</a>
-            <a href="calendar.html">Calendar</a>
-        </nav>
     </header>
 
     <section>
@@ -72,13 +85,13 @@
 
     <section class="live-performance">
         <h2>Live Performance</h2>
-        <p class="performance-description">Check out our Mashup of Poison and Billie Jean live at Bliss Forest Studio!</p>
+        <p class="performance-description">Check out our live performance at SLO Brew Rock!</p>
         
         <div class="video-container">
             <div class="video-wrapper">
                 <iframe 
-                    src="https://www.youtube.com/embed/SGMCFNnnj5k" 
-                    title="The Sweet Spots - Poison / Billie Jean Mashup (Live Studio)" 
+                    src="https://www.youtube.com/embed/DLA1uF8jamo" 
+                    title="The Sweet Spots - Live at SLO Brew Rock" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
@@ -93,15 +106,11 @@
         <p class="shows-description">Check out our playlist featuring highlights from previous live performances!</p>
         
         <div class="playlist-container">
-            <div class="playlist-wrapper">
-                <iframe 
-                    src="https://www.youtube.com/embed/videoseries?list=PL-Rfbz99Nuept-Fch76hwln7kPAJE2Qi3" 
-                    title="The Sweet Spots - Previous Shows Playlist" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <p class="video-title">
+                <a href="https://www.youtube.com/playlist?list=PL-Rfbz99Nuept-Fch76hwln7kPAJE2Qi3" target="_blank" rel="noopener noreferrer">
+                    View full playlist on YouTube
+                </a>
+            </p>
         </div>
     </section>
 
