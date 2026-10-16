@@ -698,6 +698,24 @@ section p {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+}
+
+.show-flyers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.show-flyer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 480px;
 }
 
 .flyer-container {
@@ -707,6 +725,35 @@ section p {
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid #f5c518;
+}
+
+.show-flyer-card .flyer-container {
+  max-width: none;
+}
+
+.show-ticket-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #091524;
+  border: 2px solid #f5c518;
+  border-radius: 8px;
+  color: #f5c518;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(245, 197, 24, 0.2);
+}
+
+.show-ticket-link:hover {
+  background: #f5c518;
+  color: #0b1a2e;
+  text-decoration: none;
+}
+
+.show-ticket-link--placeholder {
+  pointer-events: none;
+  opacity: 0.75;
 }
 
 .show-flyer {
@@ -747,12 +794,18 @@ section p {
 }
 
 @media (min-width: 768px) {
-  .announcement-content {
+  .show-flyers {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    gap: 2rem;
   }
-  
+
+  .show-flyer-card {
+    flex: 1;
+    max-width: 420px;
+  }
+
   .show-details {
     text-align: left;
     flex: 1;
